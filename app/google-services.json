@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "353777537622",
+    "project_id": "musicx-app",
+    "storage_bucket": "musicx-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353777537622:android:c1c008369ed93ab06fa1f7",
+        "android_client_info": {
+          "package_name": "com.example.weasel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8PAqDFiBEgR8w5TGz1wVs1QUZY12VyH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353777537622:android:76667378e740aa156fa1f7",
+        "android_client_info": {
+          "package_name": "com.vaibhav.musiq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8PAqDFiBEgR8w5TGz1wVs1QUZY12VyH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353777537622:android:8034e2107e786d936fa1f7",
+        "android_client_info": {
+          "package_name": "dev.vaibhav.musicx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8PAqDFiBEgR8w5TGz1wVs1QUZY12VyH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
