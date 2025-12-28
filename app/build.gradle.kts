@@ -51,6 +51,17 @@ android {
 }
 
 dependencies {
+    // Firebase BoM (để sync version)
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))  // Version mới nhất 2025
+
+// Firebase Auth
+    implementation("com.google.firebase:firebase-auth-ktx")
+
+// Nếu dùng Google Sign-In riêng (không qua Firebase)
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+
+// Coroutines cho Firebase tasks
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
     // Core/KTX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
