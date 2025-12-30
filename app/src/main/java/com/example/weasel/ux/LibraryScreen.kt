@@ -25,13 +25,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.weasel.R
 import com.example.weasel.data.Playlist
 import com.example.weasel.viewmodel.LibraryViewModel
 import androidx.compose.ui.platform.LocalContext
 import coil.compose.AsyncImage
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Folder
 import com.example.weasel.viewmodel.LIKED_SONGS_PLAYLIST_NAME
 

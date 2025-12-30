@@ -33,6 +33,7 @@ private val sampleArtists = listOf(
     Artist("6", "Annural Khalid", "https://i.scdn.co/image/ab6761610000e5eb7deec477c1cfd536cc291464")
 )
 
+
 @Composable
 fun HomeScreen(
     homeViewModel: HomeViewModel,
@@ -59,7 +60,7 @@ fun HomeScreen(
     ) {
         item {
             TopBar(
-                title = "Weasel",
+                title = "RESOL",
                 onSettingsClick = onSettingsClick,
                 downloadQueueSize = downloadQueue.size,
                 onDownloadQueueClick = onDownloadQueueClick,
