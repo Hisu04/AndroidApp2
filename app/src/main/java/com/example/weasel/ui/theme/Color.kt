@@ -4,8 +4,8 @@ import androidx.compose.ui.graphics.Color
 
 // Dark Theme Color Palette
 val DarkBackground = Color(0xFF000000)
-val DarkPrimary = Color(0xFFeb4329)
-val DarkSecondary = Color(0xFFCF0A0A)
+val DarkPrimary = Color(0xFFC054BD)
+val DarkSecondary = Color(0xFF5A2759)
 val DarkOnPrimary = Color(0xFFffffff)
 val DarkOnBackground = Color(0xFFffffff)
 val DarkOnSurface = Color(0xFFffffff)
@@ -14,8 +14,8 @@ val DarkSurface = Color(0xFF0D0D0D)
 
 // Light Theme Color Palette
 val LightBackground = Color(0xFFFFFFFF)
-val LightPrimary = Color(0xFFeb4329)
-val LightSecondary = Color(0xFFCF0A0A)
+val LightPrimary = Color(0xFFC054BD)
+val LightSecondary = Color(0xFF5A2759)
 val LightOnPrimary = Color(0xFFFFFFFF)
 val LightOnBackground = Color(0xFF000000)
 val LightOnSurface = Color(0xFF000000)
