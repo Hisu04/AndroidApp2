@@ -47,6 +47,8 @@ import com.example.weasel.viewmodel.MusicPlayerViewModel
 import com.kmpalette.rememberPaletteState
 import kotlinx.coroutines.launch
 import java.util.*
+import android.content.Intent
+import androidx.compose.material.icons.filled.Share
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -133,6 +135,14 @@ fun NowPlayingScreen(
                 viewModel.downloadCurrentTrack(context)
                 Toast.makeText(context, "Downloading started.", Toast.LENGTH_SHORT).show()
             },
+            onShareClick = { track ->
+                val shareIntent = Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, "https://www.youtube.com/watch?v=${track.localPath}")
+                    putExtra(Intent.EXTRA_TITLE, track.title)
+                }
+                context.startActivity(Intent.createChooser(shareIntent, "Share song"))
+            }
         )
     }
     if (showAddToPlaylistDialog) {
@@ -267,6 +277,7 @@ private fun NowPlayingOptionsMenu(
     onAddToPlaylistClick: () -> Unit,
     onLikeClick: (Track) -> Unit,
     onDownloadClick: () -> Unit,
+    onShareClick: (Track) -> Unit,  // Thêm dòng này
     ) {
     ModalBottomSheet(onDismissRequest = onDismiss) {
         Column(modifier = Modifier.padding(bottom = 32.dp)) {
@@ -295,6 +306,14 @@ private fun NowPlayingOptionsMenu(
                 icon = Icons.Default.PlaylistAdd,
                 text = "Add to Playlist",
                 onClick = { onAddToPlaylistClick(); onDismiss() }
+            )
+            BottomSheetListItem(
+                icon = Icons.Default.Share,
+                text = "Share",
+                onClick = {
+                    onShareClick(track)
+                    onDismiss()
+                }
             )
         }
     }
